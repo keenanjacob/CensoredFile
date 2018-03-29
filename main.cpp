@@ -1,4 +1,4 @@
-//Author:
+//Author: Keenan Jacob
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-  ifstream in("example2.txt");
+  ifstream in("example.txt");
   char first, last, current;
   vector<char> list;
 
@@ -26,7 +26,7 @@ int main()
   //lower case) should be assigned to first and the last letter (again in
   //either case) from the file to the variable last
 
-
+  in.close();
 
   //Then, finally, this displays the censored version:
   cout<<first<<"**"<<last<<endl;
